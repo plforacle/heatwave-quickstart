@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Turbocharge Business Insights with MySQL HeatWave - Infolob",
+  "workshoptitle": "Quick Start MySQL HeatWave",
     "help": "livelabs-help-oci_us@oracle.com",
     "tutorials": [
         {
@@ -16,61 +16,25 @@
  
 
         {
-          "title": "Lab 1: Create Virtual Cloud NetWork",
-          "filename": "../../create-vcn/create-vcn.md"
+          "title": "Lab 1: Create Compartment, and Virtual Cloud NetWork",
+          "filename": "../../create-compartment-vcn/create-compartment-vcn.md"
         },
 
         {
-            "title": "Lab 2: Create MySQL HeatWave Databases",
-            "filename": "../../create-dbs-all/create-dbs-all.md"
+            "title": "Lab 2: Create MySQL HeatWave Standard Database System",
+            "filename": "../../create-dbs-standard/create-dbs-standard.md"
         },
 
         {
-          "title": "Lab 3: Access MySQL HeatWave Databases",
-          "filename": "../../access-mds-sa-ha/access-mds-sa-ha.md"
+          "title": "Lab 3: Access MySQL HeatWave Snadard Database System",
+          "filename": "../../connect-dbs-ocishell-mysqlshell/connect-dbs-ocishell-mysqlshell.md"
+        },
+
+        {
+          "title": "Lab 4: Manage MySQL HeatWave Snadard Database System",
+          "filename": "../../manage-mds/manage-mds.md"
         },
         
-        {
-          "title": "Lab 4:Created HeatWave DB and Cluster",
-          "filename": "../../create-HW-cluster-only-dbs/create-HW-cluster-only-dbs.md"
-        },
-        
-        {
-          "title": "Lab 5: Connect to MySQL HeatWave with Compute and Create and Load airportdb Schema",
-          "filename": "../../connect-dbs-compute/connect-dbs-compute.md"
-        },
-           
-        {
-            "title": "Lab 6: Load MySQL HeatWave Cluster",
-            "filename": "../../load-heatwave/load-heatwave.md"
-        },
-        
-        {
-            "title": "Lab 7: Run Queries with MySQL Shell  ",
-            "filename": "../../run-queries/run-queries.md"
-        },
-        
-        {
-            "title": "Lab 8: Run MySQL HeatWave Autopilot",
-            "filename": "../../run-autopilot/run-autopilot.md"
-        },
-        
-        {
-          "title": "Lab 9: Build HeatWave ML with SQL",
-          "filename": "../../do-heatwave-ml/do-heatwave-ml.md"
-        },
-
-
-        {
-          "title": "Lab 10: Develop MySQL HeatWave APEX Apps",
-          "filename": "../../apex-heatwave/apex-heatwave.md"
-        },
-
-        {
-          "title": "Lab 11: Develop MySQL HeatWave PHP Apps",
-          "filename": "../../develop/develop.md"
-        }, 
-
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
