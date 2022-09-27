@@ -124,13 +124,19 @@ In this lab, you will be guided through the following tasks:
       <copy> mysqlsh -h10.0.1.136 -uadmin -p --mysql --file sakila-data.sql</copy>
       ```
 
+6. Connect to HeatWave Database
+
+      ```bash
+      <copy>mysqlsh -uadmin -p -h 10.0.1.... --sql</copy>
+      ```
+
    a. List all of the databases
 
       ````bash
       <copy>show databases;</copy>
       ````
 
-6. Work with Sakila Database
+7. Work with Sakila Database
 
    a. Point to Sakila schema
 
@@ -156,7 +162,7 @@ In this lab, you will be guided through the following tasks:
       <copy>SELECT country_id, country from country WHERE country = 'Afghanistan' OR 'Bangladesh' OR 'China';</copy>
       ````
 
-    e. Exit MySQL Shell
+8. Exit MySQL Shell
 
       ```bash
       <copy>\q</copy>
@@ -167,5 +173,5 @@ You may now proceed to the next lab.
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
+- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022

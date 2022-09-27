@@ -17,7 +17,7 @@ MySQL HeatWave Database Service is a fully managed Oracle Cloud Infrastructure n
 In this lab, you will be guided through the following steps:
 
 * Create the compartment, virtual cloud network (VCN) , and Add ingress rules to your VCN.
-* Create the Stanadrd HeatWave DB system and attach it to the newly VCN. 
+* Create the Stanadard HeatWave DB system and attach it to the newly VCN. 
 * Access the HeatWave DB with OCI and MySQL shell
 * Manage the HeatWave DB from OCI Console
 
@@ -29,5 +29,5 @@ In this lab, you will be guided through the following steps:
 ## Acknowledgements
 
 * **Author** - Perside Foster, MySQL Solution Engineering
-* **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
+* **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
 * **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022

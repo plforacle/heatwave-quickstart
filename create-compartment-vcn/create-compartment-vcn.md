@@ -1,4 +1,4 @@
-# Create your Compartment and Virtual Cloud Network  
+# Create your Compartment and Virtual Cloud Network
 
 ## Introduction
 
@@ -13,7 +13,6 @@ In this lab, you will be guided through the following tasks:
 - Create Compartment
 - Create Virtual Cloud Network
 - Configure security list to allow MySQL incoming connections
-- Configure security list to allow HTTP incoming connections
 
 ### Prerequisites
 
@@ -31,7 +30,15 @@ In this lab, you will be guided through the following tasks:
 
     **Note:** Two Compartments, _Oracle Account Name_ (root) and a compartment for PaaS, were automatically created by the Oracle Cloud.
 
-3. In the Create Compartment dialog box, in the **NAME** field, enter **heatwave**, and then enter a Description enter **Comaprtment for MySQL HeatWave Database and components**, select the **Parent Compartment**, and click **Create Compartment**.
+3. In the Create Compartment dialog box,  do the following:
+
+    a. In the **NAME** field, enter **heatwave**
+
+    b. Enter a Description enter **Compartment for MySQL HeatWave Database and components**
+
+    c. Select the **Parent Compartment**
+
+    d. Click **Create Compartment**.
 
 ## Task 2: Create Virtual Cloud Network
 
@@ -92,11 +99,11 @@ In this lab, you will be guided through the following tasks:
     Add an Ingress Rule with Source CIDR
         ```<copy>0.0.0.0/0</copy>```
 
-    Destination Port Range 
+    Destination Port Range
         ```
         <copy>3306,33060</copy>
         ```
-    Description 
+    Description
         ```
         <copy>MySQL Port Access</copy>
         ```
@@ -109,5 +116,5 @@ In this lab, you will be guided through the following tasks:
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
+- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022

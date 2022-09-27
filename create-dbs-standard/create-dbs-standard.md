@@ -84,7 +84,7 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
 9. Configure Backups, "Enable Automatic Backups"
 
-    Turn on button to enable automatic backup
+    Turn off button to disable automatic backup
 
     ![MDS](./images/04mysql08.png" ")
 
@@ -105,5 +105,5 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
+- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022

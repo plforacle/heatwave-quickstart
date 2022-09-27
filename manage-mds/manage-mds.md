@@ -1,5 +1,9 @@
 # Manage HeatWave Standard DB System
 
+## Introduction
+
+In  this lab you will use the Console to manage your MySQL HeatWqave DB system.
+
 ## Task 1: Start, Stop, or Reboot MySQL Database System
 
 1. Click the **Navigation Menu** in the upper-left corner, navigate to **Databases**, and select **DB Systems**.
@@ -71,5 +75,5 @@ When the delete process is done, **heatwave-sa** will be set to the **Delete** s
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement & Strategy Manager
+- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
