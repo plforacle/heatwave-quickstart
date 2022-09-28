@@ -29,5 +29,5 @@ In this lab, you will be guided through the following steps:
 ## Acknowledgements
 
 * **Author** - Perside Foster, MySQL Solution Engineering
-* **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
+* **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
 * **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022

@@ -12,11 +12,11 @@ In  this lab you will use the Console to manage your MySQL HeatWqave DB system.
 
 2. List Database Systems.
 
-   ![MDS](./images/04mysql02_06.png " ")
+   ![MDS](./images/db-list.png " ")
 
 3. Select the **heatwave** Compartment and click **heatwave-sa** to open the MySQL DB System Details page.
 
-    ![MDS](./images/04mysql07.png " ")
+    ![MDS](./images/hw-sa-details.png " ")
 
 4. Select one of the following actions:
 
@@ -47,21 +47,22 @@ Deleting a database system is permanent. Any manual backups associated with the 
 
 2. List Database Systems.
 
-   ![MDS](./images/04mysql02_06.png " ")
+   ![MDS](./images/db-list.png " ")
 
 3. Choose the **heatwave** Compartment.
 
 4. Click **heatwave-sa** to open the MySQL DB System Details page.
 
-    ![MDS](./images/04mysql07.png " ")
+    ![MDS](./images/hw-sa-details.png " ")
+
 
 5. From the **More Actions** drop-down list, select **Delete**.
 
-    ![MDS](./images/04mysql08.png " ")
+    ![MDS](./images/del-dropdown.png " ")
 
     > **Note:** A prompt is displayed, asking you to confirm the deletion.
 
-    ![MDS](./images/04mysql08_1.png " ")
+    ![MDS](./images/must-checkbox.png " ")
 
 6. Enter `DELETE` in all caps and click **Delete 1 MySQL Database System**.
 
@@ -75,5 +76,5 @@ When the delete process is done, **heatwave-sa** will be set to the **Delete** s
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , RKarthik Gnanakumar, MySQL Solution Engineering 
+- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
 - **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
