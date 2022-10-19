@@ -10,7 +10,8 @@ EstimatedTime: 60 minutes
 
 MySQL HeatWave Database Service is a fully managed Oracle Cloud Infrastructure native service, which automates tasks such as backup and recovery, and database and operating system patching. It is the only database service that is 100% developed, managed, and supported by the MySQL team.
 
- OTUBE: Quick Start MySQL HeatWave<iframe id="kmsembed-1_rtxar8b5" width="640" height="360" src="https://otube.oracle.com/embed/secure/iframe/entryId/1_rtxar8b5/uiConfId/43012852/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Quick Start MySQL HeatWave"></iframe>
+Watch the following video for a brief demo:
+[Quick Start MySQL HeatWave Video](https://videohub.oracle.com/media/t/1_miih0eoo)
 
 ### Objectives
 
