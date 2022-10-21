@@ -18,7 +18,7 @@ In this lab, you will be guided through the following tasks:
 - Some Experience with MySQL Shell
 - Must complete Lab1
 
-## Task 1: Create a MySQL DB System - Standalone.
+## Task 1: Create a MySQL DB System - Standalone or High Availability or Heatwave 
 
 In this Task, you will create and configure a MySQL Standalone DB System.
 
@@ -50,11 +50,18 @@ In this Task, you will create and configure a MySQL Standalone DB System.
         ````
         <copy>MySQL HeatWAve Database Service Standalone instance</copy>
         ````
+5. Setup your DB system
 
-    Select **Standalone** to specify a Standalone DB System
+    Select **Standalone** to specify a single-instance DB system
         ![MDS](./images/04mysql03-1.png " ")
 
-5. Create Administrator credentials
+    Select **High Availability** to specify a three-instance DB system that contains one primary instance and two secondary instances.
+        ![MDS](./images/04mysql03-2.png " ")
+
+    Select **HeatWave** to specify a Standalone DB system with a HeatWave-compatible shape for attaching a HeatWave Cluster to the DB system
+        ![MDS](./images/04mysql03-3.png " ")
+
+6. Create Administrator credentials
 
     **Enter Username** (write username to notepad for later use)
 
@@ -64,7 +71,7 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
     ![MDS](./images/04mysql04.png " ")
 
-6. Configure networking Keep default values
+7. Configure networking Keep default values
 
     Virtual Cloud Network: **heatwave**
 
@@ -72,17 +79,14 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
     ![MDS](./images/04mysql05.png " ")
 
-7. Configure placement  keep checked  "Availability Domain"
+8. Configure placement  keep checked  "Availability Domain"
 
     Do not check "Choose a Fault Domain" for this DB System. Oracle will chooses the best placement for you.
     ![MDS](./images/04mysql06-1.png" ")
 
-8. Configure hardware keep default shape  **MySQL.VM.Standard.E3.1.8GB**
+9. Configure hardware keep default shape
 
-    Data Storage Size (GB) keep default value **50**
-    ![MDS](./images/04mysql07-1.png" ")
-
-9. Configure Backups, "Enable Automatic Backups"
+10. Configure Backups, "Enable Automatic Backups"
 
     Turn off button to disable automatic backup
 
@@ -91,12 +95,12 @@ In this Task, you will create and configure a MySQL Standalone DB System.
     Click the **Create button**
     ![MDS](./images/04mysql09-1.png" ")
 
-10. The New MySQL DB System will be ready to use after a few minutes.
+11. The New MySQL DB System will be ready to use after a few minutes.
 
     The state will be shown as Creating during the creation
     ![MDS](./images/04mysql10-1.png" ")
 
-11. The state Active indicates that the DB System is ready to use.
+12. The state Active indicates that the DB System is ready to use.
 
     Check  the MySQL endpoint (Address) under Instances in the MySQL DB System Details page.
 
