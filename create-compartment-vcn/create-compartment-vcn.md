@@ -20,11 +20,13 @@ In this lab, you will be guided through the following tasks:
 - A web browser
 - Login to OCI to land on OCI Dashboard (This image shows a trial account)
 
-![INTRO](./images/oci-dashboard.png " ")
+![INTRO](./images/oci-dashboard-page.png " OCI Dashboard page ")
 
 ## Task 1: Create Compartment
 
 1. Click the **Navigation Menu** in the upper left, navigate to **Identity & Security** and select **Compartments**.
+
+    ![INTRO](./images/compartment-menu.png " Identity & Security Compartments ")
 
 2. On the Compartments page, click **Create Compartment**.
 
@@ -40,20 +42,22 @@ In this lab, you will be guided through the following tasks:
 
     d. Click **Create Compartment**.
 
+    ![INTRO](./images/compartment-list.png " Compartments list")
+
 ## Task 2: Create Virtual Cloud Network
 
 1. Click Navigation Menu
-    Select Networking
-    Select Virtual Cloud Networks
-    ![VCN](./images/03vcn01.png " ")
+    , Select Networking
+    , Select Virtual Cloud Networks
+    ![VCN](./images/networking-menu.png " Dashboard Networking menu ")
 
 2. Click **Start VCN Wizard**
-    ![VCN](./images/03vcn02.png " ")
+    ![VCN](./images/vcn-wizard-start.png " VCN Wizard Start")
 
 3. Select 'Create VCN with Internet Connectivity'
 
     Click 'Start VCN Wizard'
-    ![VCN](./images/03vcn03.png " ")
+    ![VCN](./images/vcn-wizard-connectivity.png " VCN Wizard connectivity ")
 
 4. Create a VCN with Internet Connectivity
 
@@ -67,37 +71,39 @@ In this lab, you will be guided through the following tasks:
 
     Compartment: Select  **heatwave**
 
-    Your screen should look similar to the following
-        ![VCN](./images/03vcn04.png " ")
+    Your screen should look similar to the following:
+        ![VCN](./images/vcn-wizard-config.png " VCN Wizard configuration ")
 
 5. Click 'Next' at the bottom of the screen
 
 6. Review Oracle Virtual Cloud Network (VCN), Subnets, and Gateways
 
     Click 'Create' to create the VCN
-    ![VCN](./images/03vcn04-1.png " ")
+    ![VCN](./images/vcn-wizard-config-review.png " VCN Wizard configuration review ")
 
 7. The Virtual Cloud Network creation is completing
-    ![VCN](./images/03vcn05.png " ")
+    ![VCN](./images/vcn-wizard-creation.png " VCN Wizard creating status ")
 
 8. Click 'View Virtual Cloud Network' to display the created VCN
-    ![VCN](./images/03vcn06.png " ")
+    ![VCN](./images/vcn-subnets.png " VCN Subnets list ")
 
 ## Task 3: Configure security list to allow MySQL incoming connections
 
-1. On MDS-VCN page under 'Subnets in (root) Compartment', click  '**Private Subnet-MDS-VCN**'
-     ![VCN](./images/03vcn07.png " ")
+1. On heatwave-vcn page under 'Subnets in heatwave Compartment', click  '**Private Subnet-heatwave-vcn**'
+     ![VCN](./images/private-subnet-seclists.png " Private Subnet Security lists ")
 
-2. On Private Subnet-MDS-VCN page under 'Security Lists',  click  '**Security List for Private Subnet-MDS-VCN**'
-    ![VCN](./images/03vcn08.png " ")
+2. On Private Subnet-heatwave-vcn page under 'Security Lists',  click  '**Security List for Private Subnet-heatwave-vcn**'
+    ![VCN](./images/seclists-ingress-rules.png " Security Lists Ingres rules ")
 
-3. On Security List for Private Subnet-MDS-VCN page under 'Ingress Rules', click '**Add Ingress Rules**'
-    ![VCN](./images/03vcn09.png " ")
+3. On Security List for Private Subnet-heatwave-vcn page under 'Ingress Rules', click '**Add Ingress Rules**'
+    ![VCN](./images/seclists-add-ingress-rule-1.png " Security Lists Add Ingress rule ")
 
 4. On Add Ingress Rules page under Ingress Rule 1
 
     Add an Ingress Rule with Source CIDR
-        ```<copy>0.0.0.0/0</copy>```
+        ```
+        <copy>0.0.0.0/0</copy>
+        ```
 
     Destination Port Range
         ```
@@ -108,10 +114,12 @@ In this lab, you will be guided through the following tasks:
         <copy>MySQL Port Access</copy>
         ```
     Click 'Add Ingress Rule'
-        ![VCN](./images/03vcn10.png " ")
+        ![VCN](./images/seclists-add-ingress-rule-2.png " Security List Add Ingress Rule details ")
 
-5. On Security List for Private Subnet-MDS-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
-    ![VCN](./images/03vcn11.png " ")
+5. On Security List for Private Subnet-heatwave-vcn page, the new Ingress Rules will be shown under the Ingress Rules List
+    ![VCN](./images/ingress-rules-list.png " Security Lists created rule ")
+
+You may now **proceed to the next lab**
 
 ## Acknowledgements
 

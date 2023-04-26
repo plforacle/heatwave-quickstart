@@ -26,11 +26,11 @@ In this lab, you will be guided through the following tasks:
 1. Login to the Console.
 2. Click the Cloud Shell icon in the Console header. Note that the OCI CLI running in the Cloud Shell will execute commands against the region selected in the Console's Region selection menu when the Cloud Shell was started.
 
-    ![DBConnect](./images/cloudshell-console-button.png "cloudshell console button")
+    ![DBConnect](./images/cloudshell/cloudshell-console-button.png "cloudshell console button")
 
     This displays the Cloud Shell in a "drawer" at the bottom of the console:
 
-    ![DBConnect](./images/cloudshell-console-drawer.png "cloudshell console drawer")
+    ![DBConnect](./images/cloudshell/cloudshell-console-drawer.png "cloudshell console drawer")
 
     You can use the icons in the upper right corner of the Cloud Shell window to minimize, maximize, restart, and close your Cloud Shell session.
 
@@ -38,29 +38,29 @@ In this lab, you will be guided through the following tasks:
 
 1. To change the network your Cloud Shell session is using to the HeatWave Database network, use the drop-down Network menu at the top of the Cloud Shell terminal window:
 
-    ![DBConnect](./images/cloud_shell_private_access_dropdown_terminal.png "cloud shell private access dropdown terminal")
+    ![DBConnect](./images/cloudshell/cloudshell-dropdown-network.png "cloud shell private access dropdown terminal")
 
-2. Select the Private Network Setup menu item. this will bring up the Private Network Setup panel. This panel allows you to select details for the private network you want to use:
+2. Select the Ephemeral Private Network Setup menu item. this will bring up the  Ephemeral Private Network Setup panel. This panel allows you to select details for the private network you want to use:
 
-    ![DBConnect](./images/cloud_shell_private_access_dropdown_vcn.png "cloud shell private access vcn")
+    ![DBConnect](./images/cloudshell/cloudshell-dropdown-network-private.png "cloud shell private access vcn")
 
 3. Select the compartment that you want to use, and then select the VCN and the Subnet to use from the drop-down list boxes. You can also optionally select one or more Network Security groups to use.
 
-    ![DBConnect](./images/cloud_shell_private_network_setup.png "cloud shell private network setup")
+    ![DBConnect](./images/cloudshell/cloudshell-ephemeral-private-setup.png "cloud shell private network setup")
 
-4. Click on the Connect to this network button to switch your Cloud Shell network connection to the HeatWave Database network.
+4. Click on **Use as active network** to switch your Cloud Shell network connection to the HeatWave Database network.
 
     Your Cloud Shell session is now connected to your HeatWave private network, as indicated in the Networking drop-down at the top of the Cloud Shell terminal session:
 
-    ![DBConnect](./images/cloud_shell_private_network_connected.png "cloud shell private network setup")
+    ![DBConnect](./images/cloudshell/cloudshell-private-network-connected.png "cloud shell private network connected")
 
-    You can see details about your private network connection by clicking the Details link.
+    You can see details about your private network connection by clicking the **Details** link.
 
-    ![DBConnect](./images/cloud_shell_private_network_details.png "cloud shell private network details")
+    ![DBConnect](./images/cloudshell/cloudshell-private-network-details.png "cloud shell private network details")
 
 ## Task 3: Use MySQL Shell
 
-1. Connect to HeatWave Database
+1. Connect, using the IP Adress and credentials of the HeatWave Database
 
     ```bash
     <copy>mysqlsh -uadmin -p -h 10.0.1.... --sql</copy>
@@ -91,8 +91,9 @@ In this lab, you will be guided through the following tasks:
       ```bash
       <copy>\q</copy>
       ```
+      ![DBConnect](./images/cloudshell/cloudshell-mysql-information.png "cloud shell database information")
 
-## Task 4: Download, unpack, Import the Sakila sample dataset
+## Task 4: Download, Unpack & Import the Sakila sample dataset
 
 1. Download Sakila sample dataset
 
@@ -115,13 +116,13 @@ In this lab, you will be guided through the following tasks:
 4. Import Sakila schema 
 
       ```bash
-      <copy>mysqlsh -h10.0.1.136 -uadmin -p --mysql --file sakila-schema.sql</copy>
+      <copy>mysqlsh -h10.0.1... -uadmin -p --mysql --file sakila-schema.sql</copy>
       ```
 
 5. Import  Sakila data.
 
       ```bash
-      <copy> mysqlsh -h10.0.1.136 -uadmin -p --mysql --file sakila-data.sql</copy>
+      <copy> mysqlsh -h10.0.1... -uadmin -p --mysql --file sakila-data.sql</copy>
       ```
 
 6. Connect to HeatWave Database
@@ -141,7 +142,7 @@ In this lab, you will be guided through the following tasks:
    a. Point to Sakila schema
 
       ````bash
-      <copy> use sakila</copy>
+      <copy> use sakila;</copy>
        ```` 
 
    b. List Sakila tables
@@ -153,14 +154,32 @@ In this lab, you will be guided through the following tasks:
    c. Display Sakila  actors
 
       ````bash
-      <copy>select * from sakila.actor limit 3;</copy>
+      <copy>SELECT * FROM sakila.actor LIMIT 3;</copy>
       ```` 
 
    d. Display Sakila countries
 
       ````bash
-      <copy>SELECT country_id, country from country WHERE country = 'Afghanistan' OR 'Bangladesh' OR 'China';</copy>
+      <copy>SELECT country_id, country FROM country WHERE country = 'Afghanistan' OR 'Bangladesh' OR 'China';</copy>
       ````
+
+      ![DBConnect](./images/cloudshell/cloudshell-sakila-schema.png "cloud shell Sakila schema")
+
+   e. List the total paid by each customer
+
+      ````bash
+      <copy>
+      SELECT 
+      custom.first_name as Name, custom.last_name as Lastname, sum(pay.amount) 'Total Paid' 
+      FROM payment pay
+      JOIN customer custom
+      ON pay.customer_id = custom.customer_id
+      GROUP BY custom.first_name, custom.last_name
+      ORDER BY custom.last_name
+      LIMIT 20;</copy>
+      ````
+
+      ![DBConnect](./images/cloudshell/cloudshell-sakila-query.png "cloud shell Sakila queries")
 
 8. Exit MySQL Shell
 
@@ -168,7 +187,7 @@ In this lab, you will be guided through the following tasks:
       <copy>\q</copy>
       ```
 
-You may now proceed to the next lab.
+You may now **proceed to the next lab**
 
 ## Acknowledgements
 

@@ -4,7 +4,7 @@
 
 This lab will introduce you to a powerful union between MySQL Enterprise Edition and Oracle Cloud Infrastructure (OCI). You will learn how to create your first MySQL HeatWave Database Service in a secure OCI environment. You will also learn how to connect and use your MySQL HeatWave Database Service with the OCI and MySQL Shell tool.
 
-EstimatedTime: 60 minutes
+_EstimatedTime:_ 60 minutes
 
 ### About this Product
 
@@ -26,6 +26,8 @@ In this lab, you will be guided through the following steps:
 
 * An Oracle Free Tier, Paid
 * Some Experience with MySQL Shell. See the [MySQL Shell page](https://dev.mysql.com/doc/mysql-shell/8.0/en/).
+
+You may now **proceed to the next lab**
 
 ## Acknowledgements
 

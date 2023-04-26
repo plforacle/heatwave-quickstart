@@ -31,10 +31,16 @@
         },
 
         {
-          "title": "Lab 4: Manage MySQL HeatWave Standard Database System",
+          "title": "Lab 4: Monitoring MySQL HeatWave Satandard Database System",
+          "filename": "../../monitoring-db-instance/monitoring-db-instance.md"
+        },
+
+        {
+          "title": "Lab 5: Manage MySQL HeatWave Standard Database System",
           "filename": "../../manage-mds/manage-mds.md"
         },
         
+
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
