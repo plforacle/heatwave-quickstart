@@ -23,10 +23,10 @@ In this lab, you will be guided through the following tasks:
 In this Task, you will create and configure a MySQL Standalone DB System.
 
 1. Open the navigation menu. Under Databases -> MySQL, click DB Systems
-    ![MDS](./images/heatwave/databases-menu.png " Dashboard Databases Menu ")
+    ![MDS](./images/databases-menu.png " Dashboard Databases Menu ")
 
 2. Click 'Create DB System'
-    ![MDS](./images/heatwave/dbsystems-empty-list.png " DB Systems list empty ")
+    ![MDS](./images/dbsystems-empty-list.png " DB Systems list empty ")
 
 3. Create MySQL DB System dialog complete the fields in each section
 
@@ -57,13 +57,13 @@ In this Task, you will create and configure a MySQL Standalone DB System.
     Explore the different System options:
 
     Select **Standalone** to specify a single-instance DB system
-        ![MDS](./images/heatwave/dbsystem-standalone.png " DB System Standalone option ")
+        ![MDS](./images/dbsystem-standalone.png " DB System Standalone option ")
 
     Select **High Availability** to specify a three-instance DB system that contains one primary instance and two secondary instances.
-        ![MDS](./images/heatwave/dbsystem-high-availability.png " DB System High Availability option ")
+        ![MDS](./images/dbsystem-high-availability.png " DB System High Availability option ")
 
     Select **HeatWave** to specify a Standalone DB system with a HeatWave-compatible shape for attaching a HeatWave Cluster to the DB system
-        ![MDS](./images/heatwave/dbsystem-heatwave.png " DB System Heatwave option ")
+        ![MDS](./images/dbsystem-heatwave.png " DB System Heatwave option ")
 
     Choose **Standalone** as the desired option for this Lab
 
@@ -75,7 +75,7 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
     **Confirm Password** (value should match password for later use)
 
-    ![MDS](./images/heatwave/db-administrator-credentials.png " DB administrator credentials ")
+    ![MDS](./images/db-administrator-credentials.png " DB administrator credentials ")
 
 7. Configure networking Keep default values
 
@@ -83,12 +83,12 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
     Subnet: **Private Subnet-heatwave-vcn (Regional)**
 
-    ![MDS](./images/heatwave/db-networking-config.png " DB networking configuration ")
+    ![MDS](./images/db-networking-config.png " DB networking configuration ")
 
 8. Configure placement  keep checked  "Availability Domain"
 
     Do not check "Choose a Fault Domain" for this DB System. Oracle will choose the best placement for you.
-    ![MDS](./images/heatwave/db-availability-domains.png " DB Availability Domains ")
+    ![MDS](./images/db-availability-domains.png " DB Availability Domains ")
 
 9. Configure hardware keep default shape
 
@@ -96,26 +96,24 @@ In this Task, you will create and configure a MySQL Standalone DB System.
 
     **Turn off** button to disable automatic backup
 
-    ![MDS](./images/heatwave/db-backup-plan-checkbox.png " DB Backup Plan checkbox ")
+    ![MDS](./images/db-backup-plan-checkbox.png " DB Backup Plan checkbox ")
 
     Click the **Create button**
-    ![MDS](./images/heatwave/db-creation-summary.png " DB creation summary ")
+    ![MDS](./images/db-creation-summary.png " DB creation summary ")
 
 11. The New MySQL HeatWave DB System will be ready to use after a few minutes.
 
     The state will be shown as Creating during the creation
-    ![MDS](./images/heatwave/heatwave-creating.png " Heatwave creating status details ")
+    ![MDS](./images/heatwave-creating.png " Heatwave creating status details ")
 
 12. The state Active indicates that the DB System is ready to use.
 
     Check  the MySQL endpoint (Address) under Instances in the MySQL DB System Details page -> Endpoint, Private IP Adress .
 
-    ![MDS](./images/heatwave/heatwave-active.png " Heatwave active status details ")
-
-You may now **proceed to the next lab**
+    ![MDS](./images/heatwave-active.png " Heatwave active status details ")
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 - **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
+- **Last Updated By/Date** - Cristian Aguilar, MySQL Solution Engineering, May 2023

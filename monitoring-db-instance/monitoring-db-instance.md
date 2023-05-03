@@ -105,7 +105,7 @@ In this lab, you will be guided through the following tasks:
 
    ![MDS](./images/metric-explorer.png " Metric Explorer, CPU utilization")
 
-   You can click on **Edit queries** to inspect and modify it
+   You can click on **Edit queries** to inspect and modify the query
 
    In addition to the previous filters and actions, in the Metric Explorer page you can:
 
@@ -115,10 +115,9 @@ In this lab, you will be guided through the following tasks:
       - Create Alarms
    
    ![MDS](./images/metric-explorer-memory-cpu.png " Metric Explorer, Memory and CPU utilization, 5min MAX")
-You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-- **Author** - Perside Foster, MySQL Solution Engineering
-- **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
+- **Author** - Cristian Aguilar, MySQL Solution Engineering
+- **Contributors** - Perside Foster, MySQL Solution Engineering 
+- **Last Updated By/Date** - Cristian Aguilar, MySQL Solution Engineering, May 2023

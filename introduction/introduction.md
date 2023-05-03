@@ -27,8 +27,6 @@ In this lab, you will be guided through the following steps:
 * An Oracle Free Tier, Paid
 * Some Experience with MySQL Shell. See the [MySQL Shell page](https://dev.mysql.com/doc/mysql-shell/8.0/en/).
 
-You may now **proceed to the next lab**
-
 ## Acknowledgements
 
 * **Author** - Perside Foster, MySQL Solution Engineering

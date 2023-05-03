@@ -119,10 +119,8 @@ In this lab, you will be guided through the following tasks:
 5. On Security List for Private Subnet-heatwave-vcn page, the new Ingress Rules will be shown under the Ingress Rules List
     ![VCN](./images/ingress-rules-list.png " Security Lists created rule ")
 
-You may now **proceed to the next lab**
-
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 - **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
+- **Last Updated By/Date** - Cristian Aguilar, MySQL Solution Engineering, May 2023

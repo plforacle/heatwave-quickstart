@@ -71,15 +71,13 @@ Deleting a database system is permanent. Any manual backups associated with the 
 
 When the delete process is done, **heatwave-sa** will be set to the **Delete** status.
 
-You may now **proceed to the next lab**
-
 ## Learn More
 
--  [Oracle Cloud Infrastructure MySQL Database Service Documentation ](https://docs.cloud.oracle.com/en-us/iaas/mysql-database)
-- [MySQL Database Documentation](https://www.mysql.com)
+* [Oracle Cloud Infrastructure MySQL Database Service Documentation ](https://docs.cloud.oracle.com/en-us/iaas/mysql-database)
+* [MySQL Database Documentation](https://www.mysql.com)
 
 ## Acknowledgements
 
 - **Author** - Perside Foster, MySQL Solution Engineering
 - **Contributors** - Airton Lastori, Principal Product Manager, Nick Mader, MySQL Global Channel Enablement , Ravish Patel, MySQL Solution Engineering , Karthik Gnanakumar, MySQL Solution Engineering 
-- **Last Updated By/Date** - Perside Foster, MySQL Solution Engineering, Oct 2022
+- **Last Updated By/Date** - Cristian Aguilar, MySQL Solution Engineering, May 2023
